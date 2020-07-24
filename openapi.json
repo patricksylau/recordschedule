@@ -6,33 +6,33 @@
    "openapi":"3.0.0",
    "servers":[
       {
-         "url":"http:\/\/144.217.72.101\/~acy3\/api\/api.php"
+         "url":"http://144.217.72.101/~acy3/api/api.php"
       }
    ],
    "paths":{
-      "\/records\/business_rules":{
+      "/records/business_rules":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/filter"
+                  "$ref":"#/components/parameters/filter"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/order"
+                  "$ref":"#/components/parameters/order"
                },
                {
-                  "$ref":"#\/components\/parameters\/size"
+                  "$ref":"#/components/parameters/size"
                },
                {
-                  "$ref":"#\/components\/parameters\/page"
+                  "$ref":"#/components/parameters/page"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -42,13 +42,13 @@
             "description":"list business_rules",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/list-business_rules"
+                  "$ref":"#/components/responses/list-business_rules"
                }
             }
          },
          "post":{
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/create-business_rules"
+               "$ref":"#/components/requestBodies/create-business_rules"
             },
             "tags":[
                "business_rules"
@@ -57,25 +57,25 @@
             "description":"create business_rules",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/pk_integer"
+                  "$ref":"#/components/responses/pk_integer"
                }
             }
          }
       },
-      "\/records\/business_rules\/{id}":{
+      "/records/business_rules/{id}":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -85,18 +85,18 @@
             "description":"read business_rules",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/read-business_rules"
+                  "$ref":"#/components/responses/read-business_rules"
                }
             }
          },
          "put":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/update-business_rules"
+               "$ref":"#/components/requestBodies/update-business_rules"
             },
             "tags":[
                "business_rules"
@@ -105,14 +105,14 @@
             "description":"update business_rules",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "delete":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "tags":[
@@ -122,18 +122,18 @@
             "description":"delete business_rules",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "patch":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/increment-business_rules"
+               "$ref":"#/components/requestBodies/increment-business_rules"
             },
             "tags":[
                "business_rules"
@@ -142,34 +142,34 @@
             "description":"increment business_rules",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          }
       },
-      "\/records\/error_log":{
+      "/records/error_log":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/filter"
+                  "$ref":"#/components/parameters/filter"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/order"
+                  "$ref":"#/components/parameters/order"
                },
                {
-                  "$ref":"#\/components\/parameters\/size"
+                  "$ref":"#/components/parameters/size"
                },
                {
-                  "$ref":"#\/components\/parameters\/page"
+                  "$ref":"#/components/parameters/page"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -179,13 +179,13 @@
             "description":"list error_log",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/list-error_log"
+                  "$ref":"#/components/responses/list-error_log"
                }
             }
          },
          "post":{
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/create-error_log"
+               "$ref":"#/components/requestBodies/create-error_log"
             },
             "tags":[
                "error_log"
@@ -194,25 +194,25 @@
             "description":"create error_log",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/pk_integer"
+                  "$ref":"#/components/responses/pk_integer"
                }
             }
          }
       },
-      "\/records\/error_log\/{id}":{
+      "/records/error_log/{id}":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -222,18 +222,18 @@
             "description":"read error_log",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/read-error_log"
+                  "$ref":"#/components/responses/read-error_log"
                }
             }
          },
          "put":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/update-error_log"
+               "$ref":"#/components/requestBodies/update-error_log"
             },
             "tags":[
                "error_log"
@@ -242,14 +242,14 @@
             "description":"update error_log",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "delete":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "tags":[
@@ -259,18 +259,18 @@
             "description":"delete error_log",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "patch":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/increment-error_log"
+               "$ref":"#/components/requestBodies/increment-error_log"
             },
             "tags":[
                "error_log"
@@ -279,34 +279,34 @@
             "description":"increment error_log",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          }
       },
-      "\/records\/record_schedule":{
+      "/records/record_schedule":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/filter"
+                  "$ref":"#/components/parameters/filter"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/order"
+                  "$ref":"#/components/parameters/order"
                },
                {
-                  "$ref":"#\/components\/parameters\/size"
+                  "$ref":"#/components/parameters/size"
                },
                {
-                  "$ref":"#\/components\/parameters\/page"
+                  "$ref":"#/components/parameters/page"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -316,13 +316,13 @@
             "description":"list record_schedule",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/list-record_schedule"
+                  "$ref":"#/components/responses/list-record_schedule"
                }
             }
          },
          "post":{
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/create-record_schedule"
+               "$ref":"#/components/requestBodies/create-record_schedule"
             },
             "tags":[
                "record_schedule"
@@ -331,25 +331,25 @@
             "description":"create record_schedule",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/pk_integer"
+                  "$ref":"#/components/responses/pk_integer"
                }
             }
          }
       },
-      "\/records\/record_schedule\/{id}":{
+      "/records/record_schedule/{id}":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -359,18 +359,18 @@
             "description":"read record_schedule",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/read-record_schedule"
+                  "$ref":"#/components/responses/read-record_schedule"
                }
             }
          },
          "put":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/update-record_schedule"
+               "$ref":"#/components/requestBodies/update-record_schedule"
             },
             "tags":[
                "record_schedule"
@@ -379,14 +379,14 @@
             "description":"update record_schedule",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "delete":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "tags":[
@@ -396,18 +396,18 @@
             "description":"delete record_schedule",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "patch":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/increment-record_schedule"
+               "$ref":"#/components/requestBodies/increment-record_schedule"
             },
             "tags":[
                "record_schedule"
@@ -416,34 +416,34 @@
             "description":"increment record_schedule",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          }
       },
-      "\/records\/submission_history":{
+      "/records/submission_history":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/filter"
+                  "$ref":"#/components/parameters/filter"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/order"
+                  "$ref":"#/components/parameters/order"
                },
                {
-                  "$ref":"#\/components\/parameters\/size"
+                  "$ref":"#/components/parameters/size"
                },
                {
-                  "$ref":"#\/components\/parameters\/page"
+                  "$ref":"#/components/parameters/page"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -453,13 +453,13 @@
             "description":"list submission_history",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/list-submission_history"
+                  "$ref":"#/components/responses/list-submission_history"
                }
             }
          },
          "post":{
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/create-submission_history"
+               "$ref":"#/components/requestBodies/create-submission_history"
             },
             "tags":[
                "submission_history"
@@ -468,25 +468,25 @@
             "description":"create submission_history",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/pk_integer"
+                  "$ref":"#/components/responses/pk_integer"
                }
             }
          }
       },
-      "\/records\/submission_history\/{id}":{
+      "/records/submission_history/{id}":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -496,18 +496,18 @@
             "description":"read submission_history",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/read-submission_history"
+                  "$ref":"#/components/responses/read-submission_history"
                }
             }
          },
          "put":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/update-submission_history"
+               "$ref":"#/components/requestBodies/update-submission_history"
             },
             "tags":[
                "submission_history"
@@ -516,14 +516,14 @@
             "description":"update submission_history",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "delete":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "tags":[
@@ -533,18 +533,18 @@
             "description":"delete submission_history",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "patch":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/increment-submission_history"
+               "$ref":"#/components/requestBodies/increment-submission_history"
             },
             "tags":[
                "submission_history"
@@ -553,34 +553,34 @@
             "description":"increment submission_history",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          }
       },
-      "\/records\/training_data":{
+      "/records/training_data":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/filter"
+                  "$ref":"#/components/parameters/filter"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/order"
+                  "$ref":"#/components/parameters/order"
                },
                {
-                  "$ref":"#\/components\/parameters\/size"
+                  "$ref":"#/components/parameters/size"
                },
                {
-                  "$ref":"#\/components\/parameters\/page"
+                  "$ref":"#/components/parameters/page"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -590,13 +590,13 @@
             "description":"list training_data",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/list-training_data"
+                  "$ref":"#/components/responses/list-training_data"
                }
             }
          },
          "post":{
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/create-training_data"
+               "$ref":"#/components/requestBodies/create-training_data"
             },
             "tags":[
                "training_data"
@@ -605,25 +605,25 @@
             "description":"create training_data",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/pk_integer"
+                  "$ref":"#/components/responses/pk_integer"
                }
             }
          }
       },
-      "\/records\/training_data\/{id}":{
+      "/records/training_data/{id}":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -633,18 +633,18 @@
             "description":"read training_data",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/read-training_data"
+                  "$ref":"#/components/responses/read-training_data"
                }
             }
          },
          "put":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/update-training_data"
+               "$ref":"#/components/requestBodies/update-training_data"
             },
             "tags":[
                "training_data"
@@ -653,14 +653,14 @@
             "description":"update training_data",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "delete":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "tags":[
@@ -670,18 +670,18 @@
             "description":"delete training_data",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "patch":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/increment-training_data"
+               "$ref":"#/components/requestBodies/increment-training_data"
             },
             "tags":[
                "training_data"
@@ -690,34 +690,34 @@
             "description":"increment training_data",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          }
       },
-      "\/records\/user_profile":{
+      "/records/user_profile":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/filter"
+                  "$ref":"#/components/parameters/filter"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/order"
+                  "$ref":"#/components/parameters/order"
                },
                {
-                  "$ref":"#\/components\/parameters\/size"
+                  "$ref":"#/components/parameters/size"
                },
                {
-                  "$ref":"#\/components\/parameters\/page"
+                  "$ref":"#/components/parameters/page"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -727,13 +727,13 @@
             "description":"list user_profile",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/list-user_profile"
+                  "$ref":"#/components/responses/list-user_profile"
                }
             }
          },
          "post":{
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/create-user_profile"
+               "$ref":"#/components/requestBodies/create-user_profile"
             },
             "tags":[
                "user_profile"
@@ -742,25 +742,25 @@
             "description":"create user_profile",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/pk_integer"
+                  "$ref":"#/components/responses/pk_integer"
                }
             }
          }
       },
-      "\/records\/user_profile\/{id}":{
+      "/records/user_profile/{id}":{
          "get":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                },
                {
-                  "$ref":"#\/components\/parameters\/include"
+                  "$ref":"#/components/parameters/include"
                },
                {
-                  "$ref":"#\/components\/parameters\/exclude"
+                  "$ref":"#/components/parameters/exclude"
                },
                {
-                  "$ref":"#\/components\/parameters\/join"
+                  "$ref":"#/components/parameters/join"
                }
             ],
             "tags":[
@@ -770,18 +770,18 @@
             "description":"read user_profile",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/read-user_profile"
+                  "$ref":"#/components/responses/read-user_profile"
                }
             }
          },
          "put":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/update-user_profile"
+               "$ref":"#/components/requestBodies/update-user_profile"
             },
             "tags":[
                "user_profile"
@@ -790,14 +790,14 @@
             "description":"update user_profile",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "delete":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "tags":[
@@ -807,18 +807,18 @@
             "description":"delete user_profile",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          },
          "patch":{
             "parameters":[
                {
-                  "$ref":"#\/components\/parameters\/pk"
+                  "$ref":"#/components/parameters/pk"
                }
             ],
             "requestBody":{
-               "$ref":"#\/components\/requestBodies\/increment-user_profile"
+               "$ref":"#/components/requestBodies/increment-user_profile"
             },
             "tags":[
                "user_profile"
@@ -827,7 +827,7 @@
             "description":"increment user_profile",
             "responses":{
                "200":{
-                  "$ref":"#\/components\/responses\/rows_affected"
+                  "$ref":"#/components/responses/rows_affected"
                }
             }
          }
@@ -838,7 +838,7 @@
          "pk_integer":{
             "description":"inserted primary key value (integer)",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
                      "type":"integer",
                      "format":"int64"
@@ -849,7 +849,7 @@
          "pk_string":{
             "description":"inserted primary key value (string)",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
                      "type":"string",
                      "format":"uuid"
@@ -860,7 +860,7 @@
          "rows_affected":{
             "description":"number of rows affected (integer)",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
                      "type":"integer",
                      "format":"int64"
@@ -871,9 +871,9 @@
          "list-business_rules":{
             "description":"list of business_rules records",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/list-business_rules"
+                     "$ref":"#/components/schemas/list-business_rules"
                   }
                }
             }
@@ -881,9 +881,9 @@
          "read-business_rules":{
             "description":"single business_rules record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/read-business_rules"
+                     "$ref":"#/components/schemas/read-business_rules"
                   }
                }
             }
@@ -891,9 +891,9 @@
          "list-error_log":{
             "description":"list of error_log records",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/list-error_log"
+                     "$ref":"#/components/schemas/list-error_log"
                   }
                }
             }
@@ -901,9 +901,9 @@
          "read-error_log":{
             "description":"single error_log record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/read-error_log"
+                     "$ref":"#/components/schemas/read-error_log"
                   }
                }
             }
@@ -911,9 +911,9 @@
          "list-record_schedule":{
             "description":"list of record_schedule records",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/list-record_schedule"
+                     "$ref":"#/components/schemas/list-record_schedule"
                   }
                }
             }
@@ -921,9 +921,9 @@
          "read-record_schedule":{
             "description":"single record_schedule record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/read-record_schedule"
+                     "$ref":"#/components/schemas/read-record_schedule"
                   }
                }
             }
@@ -931,9 +931,9 @@
          "list-submission_history":{
             "description":"list of submission_history records",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/list-submission_history"
+                     "$ref":"#/components/schemas/list-submission_history"
                   }
                }
             }
@@ -941,9 +941,9 @@
          "read-submission_history":{
             "description":"single submission_history record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/read-submission_history"
+                     "$ref":"#/components/schemas/read-submission_history"
                   }
                }
             }
@@ -951,9 +951,9 @@
          "list-training_data":{
             "description":"list of training_data records",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/list-training_data"
+                     "$ref":"#/components/schemas/list-training_data"
                   }
                }
             }
@@ -961,9 +961,9 @@
          "read-training_data":{
             "description":"single training_data record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/read-training_data"
+                     "$ref":"#/components/schemas/read-training_data"
                   }
                }
             }
@@ -971,9 +971,9 @@
          "list-user_profile":{
             "description":"list of user_profile records",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/list-user_profile"
+                     "$ref":"#/components/schemas/list-user_profile"
                   }
                }
             }
@@ -981,9 +981,9 @@
          "read-user_profile":{
             "description":"single user_profile record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/read-user_profile"
+                     "$ref":"#/components/schemas/read-user_profile"
                   }
                }
             }
@@ -2322,9 +2322,9 @@
          "create-business_rules":{
             "description":"single business_rules record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/create-business_rules"
+                     "$ref":"#/components/schemas/create-business_rules"
                   }
                }
             }
@@ -2332,9 +2332,9 @@
          "update-business_rules":{
             "description":"single business_rules record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/update-business_rules"
+                     "$ref":"#/components/schemas/update-business_rules"
                   }
                }
             }
@@ -2342,9 +2342,9 @@
          "increment-business_rules":{
             "description":"single business_rules record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/increment-business_rules"
+                     "$ref":"#/components/schemas/increment-business_rules"
                   }
                }
             }
@@ -2352,9 +2352,9 @@
          "create-error_log":{
             "description":"single error_log record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/create-error_log"
+                     "$ref":"#/components/schemas/create-error_log"
                   }
                }
             }
@@ -2362,9 +2362,9 @@
          "update-error_log":{
             "description":"single error_log record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/update-error_log"
+                     "$ref":"#/components/schemas/update-error_log"
                   }
                }
             }
@@ -2372,9 +2372,9 @@
          "increment-error_log":{
             "description":"single error_log record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/increment-error_log"
+                     "$ref":"#/components/schemas/increment-error_log"
                   }
                }
             }
@@ -2382,9 +2382,9 @@
          "create-record_schedule":{
             "description":"single record_schedule record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/create-record_schedule"
+                     "$ref":"#/components/schemas/create-record_schedule"
                   }
                }
             }
@@ -2392,9 +2392,9 @@
          "update-record_schedule":{
             "description":"single record_schedule record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/update-record_schedule"
+                     "$ref":"#/components/schemas/update-record_schedule"
                   }
                }
             }
@@ -2402,9 +2402,9 @@
          "increment-record_schedule":{
             "description":"single record_schedule record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/increment-record_schedule"
+                     "$ref":"#/components/schemas/increment-record_schedule"
                   }
                }
             }
@@ -2412,9 +2412,9 @@
          "create-submission_history":{
             "description":"single submission_history record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/create-submission_history"
+                     "$ref":"#/components/schemas/create-submission_history"
                   }
                }
             }
@@ -2422,9 +2422,9 @@
          "update-submission_history":{
             "description":"single submission_history record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/update-submission_history"
+                     "$ref":"#/components/schemas/update-submission_history"
                   }
                }
             }
@@ -2432,9 +2432,9 @@
          "increment-submission_history":{
             "description":"single submission_history record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/increment-submission_history"
+                     "$ref":"#/components/schemas/increment-submission_history"
                   }
                }
             }
@@ -2442,9 +2442,9 @@
          "create-training_data":{
             "description":"single training_data record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/create-training_data"
+                     "$ref":"#/components/schemas/create-training_data"
                   }
                }
             }
@@ -2452,9 +2452,9 @@
          "update-training_data":{
             "description":"single training_data record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/update-training_data"
+                     "$ref":"#/components/schemas/update-training_data"
                   }
                }
             }
@@ -2462,9 +2462,9 @@
          "increment-training_data":{
             "description":"single training_data record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/increment-training_data"
+                     "$ref":"#/components/schemas/increment-training_data"
                   }
                }
             }
@@ -2472,9 +2472,9 @@
          "create-user_profile":{
             "description":"single user_profile record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/create-user_profile"
+                     "$ref":"#/components/schemas/create-user_profile"
                   }
                }
             }
@@ -2482,9 +2482,9 @@
          "update-user_profile":{
             "description":"single user_profile record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/update-user_profile"
+                     "$ref":"#/components/schemas/update-user_profile"
                   }
                }
             }
@@ -2492,9 +2492,9 @@
          "increment-user_profile":{
             "description":"single user_profile record",
             "content":{
-               "application\/json":{
+               "application/json":{
                   "schema":{
-                     "$ref":"#\/components\/schemas\/increment-user_profile"
+                     "$ref":"#/components/schemas/increment-user_profile"
                   }
                }
             }
